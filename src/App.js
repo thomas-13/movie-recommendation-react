@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { NavBar } from './components/Navbar';
 import {Home} from './pages/Home';
 import { Admin } from './pages/Admin';
-import { Login } from './components/Login';
+import { Login } from './pages/Login';
 import { useState, createContext, useEffect } from 'react';
 import data from './data/movies.json'
 
