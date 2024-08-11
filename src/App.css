@@ -1,38 +1,244 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  opacity: 0.9;
+  background-image:  radial-gradient(#9e9e9e 2px, transparent 2px), radial-gradient(#9e9e9e 2px, #ffffff 2px);
+  background-size: 80px 80px;
+  background-position: 0 0,40px 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+button{
+  background: black;
+  color: wheat;
+}
+
+.Navbar{
+  background-color: #191919;
+  box-shadow: 1px 0 20px 1px #3b3b3b;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;  
+}
+
+.Navbar > a{
+  text-decoration: none;
+  color: wheat;
+}
+
+.modalBackground{
+  position: "fixed";
+  top: 0;
+  left: 0;
+  width: "100%";
+  height: "100%";
+  background: "rgba(0, 0, 0, 0.5)";
+  display: "flex";
+  align-items: "center";
+  justify-content: "center"
+}
+
+.modalBox{
+  background: white;
+  height: min-content;
+  width: 30%;
+  margin: auto;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.movieList{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+ul{
+  list-style-type: none ;
+}
+.listMovies{
+  position: relative;
+  top: 110px;
+}
+
+.movieList > li{
+  height: 30vh;
+  width: 20vh;
+  align-content: center;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 10px;
+  background: #000000;
+  box-shadow: 4px 6px 10px -2px black;
+  position: relative;
+  color: wheat;
+}
+
+.rank{
+  font-size: x-large;
+  position: absolute;
+  top: 5vh;
+  right: 50%;
+    left: 40%;
+}
+
+.heading{
+  position: relative;
+  top: 80px;
+  position: relative;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Bebas Neue';
+  font-weight: bolder;
+  align-content: center;
+}
+.titleMovie{
+  font-size: 10vh;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 500px) {
+  .titleMovie{
+    font-size: 4vh;
+  }
+  
+}
+.titleRecommendations{
+  font-size: 8vh;
+  letter-spacing: 3px;
+}
+
+.sort{
+  right: -8vh;
+  position: absolute;
+}
+
+.sort select{
+  width: 60%;
+  height: 5vh;
+  margin: 0px 4px;
+  border-radius: 5px;
+}
+
+.heading > h1{
+  position: relative;
+  left: 25px;
+}
+
+.adminGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Montserrat';
+  margin: 20px 0px 0px 0px;
+}
+
+@media (max-width: 768px) {
+  .adminGrid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.currentList{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.adminGrid button{
+  color: wheat;
+  background: black;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.movieForm{
+  display: flex;
+  justify-content: center;
+}
+
+.movieForm input, button, textarea{
+  margin: 5px;
+  width:  -webkit-fill-available;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.movieForm span{
+  color: red;
+}
+
+.adminGrid select{
+  margin: 15px 5px 0px 10px;
+  padding: 6px;
+}
+
+.movieListPlain{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 60%;;
 }
 
-.App-link {
-  color: #61dafb;
+.movieListPlain >li{
+  color: #ffeece;
+  background: #000000;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: -webkit-fill-available;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 20vh;
+}
+
+.login form{
+  width: 40%;
+}
+
+.login input, button{
+  margin: 5px;
+  width:  -webkit-fill-available;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
 }

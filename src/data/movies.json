@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "rank": 1,
+      "title": "Back to the Future",
+      "year" :"1985",
+      "releaseDate": "1985-07-03",
+      "synopsis": "A teenager is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, an eccentric scientist.",
+      "director": "Robert Zemeckis",
+      "rating": "PG"
+    },
+    {
+      "id": 2,
+      "rank": 2,
+      "title": "The Breakfast Club",
+      "year" :"1985",
+      "releaseDate": "1985-02-15",
+      "synopsis": "Five high school students from different backgrounds spend a Saturday in detention together and learn that they have more in common than they thought.",
+      "director": "John Hughes",
+      "rating": "R"
+    },
+    {
+      "id": 3,
+      "rank": 3,
+      "title": "E.T. the Extra-Terrestrial",
+      "year" :"1982",
+      "releaseDate": "1985-02-15",
+      "synopsis": "An alien is left behind on Earth and is saved by young Elliot who decides to keep him hidden. While the task force hunts for it, Elliot and his siblings form an emotional bond with their new friend.",
+      "director": "Steven Spielberg",
+      "rating": "R"
+    },
+    {
+      "id": 4,
+      "rank": 4,
+      "title": "The Silence of the Lambs",
+      "year" :"1991",
+      "releaseDate": "1985-02-15",
+      "synopsis": "Jodie Foster stars as Clarice Starling, a top student at the FBI's training academy. Jack Crawford (Scott Glenn) wants Clarice to interview Dr. Hannibal Lecter (Anthony Hopkins), a brilliant psychiatrist who is also a violent psychopath, serving life behind bars for various acts of murder and cannibalism.",
+      "director": "Jonathan Demme",
+      "rating": "R"
+    },
+    {
+      "id": 5,
+      "rank": 5,
+      "title": "My Neighbor Totoro",
+      "year" :"1988",
+      "releaseDate": "1985-02-15",
+      "synopsis": "Two sisters relocate to rural Japan with their father to spend time with their ill mother. They face a mythical forest sprite and its woodland friends with whom they have many magical adventures.",
+      "director": "Hayao Miyazaki",
+      "rating": "R"
+    }
+  ]
+  
